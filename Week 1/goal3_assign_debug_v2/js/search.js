@@ -1,4 +1,11 @@
 // Create privatized scope using a self-executing function
+
+/*	Name: Justin Weisner
+	Instructor: Jessica Garlic
+	Date: 05 September 2015
+	Assignment: Analyze Buggy Search
+ */
+
 (function(){
 	
 	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)
@@ -8,18 +15,28 @@
 	;
 	
 	// Validates search query
+
+	//There is a syntax error: Unexpected token ==.
+
+	//validqte is not a word, need to fix it to Validate.
 	var validqte == function(query){
 		
 		// Trim whitespace from start and end of search query
+
+		//charAt is not a word.
 		while(query.charAt(0) = " "){
 			query = query.substring(1, query.length);
 		};
 		while(query.charAt(query.length-1) === ""){
 			query = query.substring(0, query.length-1);
-		;
+
+			//Extra Semi colon that can be deleted
+			;
 		
 		// Check search length, must have 3 characters
 		if(query.length < 3){
+
+			//There needs to be quotation marks at the end of the sentence.
 			alert("Your search query is too small, try again.);
 			
 			// (DO NOT FIX THE LINE DIRECTLY BELOW)
@@ -31,12 +48,16 @@
 	};
 	
 	// Finds search matches
+
+		//There needs to be a closing tag at the end of the variable.
 	var search = function(query)
 		
 		// split the user's search query string into an array
 		var queryArray = query.join(" ");
 		
 		// array to store matched results from database.js
+
+		//Add the websites to the array to get them to show on screen.
 		var results = [];
 
 		// loop through each index of db array
@@ -110,11 +131,16 @@
 	// THE LINE DIRECTLY BELOW IS CORRECT
 	document.forms[0].onsubmit = function(){
 		var query = searchInput.value;
+
+		//validqte is not a word, need to fix it to Validate.
 		validqte(query);
 
         // return false is needed for most events - this will be reviewed in upcoming course material
         // THE LINE DIRECTLY BELOW IS CORRECT
 		return false;
+	//There is no closing curly bracket for this document.form code.
 	;
 
+//There is an extra closing parentheses tag that can be deleted.
+//The curly bracket is not closing anything, either connect it to something or delete it.
 })();

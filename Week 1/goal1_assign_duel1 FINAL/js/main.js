@@ -55,7 +55,7 @@
                 break;
             };
 
-          };
+        };
     };
 
     function winnerCheck(){
