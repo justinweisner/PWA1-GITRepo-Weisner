@@ -14,12 +14,12 @@
 			currentSearch = '';
 	// Validates search query
 
-
+	//Week 2 - Fixed the word Validate.
 	var validate = function(query) {
 
 		// Trim whitespace from start and end of search query
 
-		//charAt is not a word.
+		//Week 2 - Fixed the word Chart.
 		while (query.chart(0) = " ") {
 			query = query.substring(1, query.length);
 		}
@@ -27,7 +27,7 @@
 		while (query.chart(query.length - 1) === "") {
 			query = query.substring(0, query.length - 1);
 
-			//Extra Semi colon that can be deleted
+			//Week 2 - Deleted extra semi colon
 
 
 			// Check search length, must have 3 characters
@@ -63,6 +63,8 @@
 
 				// each db[i] is a single video item, each title ends with a pipe "|"
 				// save a lowercase variable of the video title
+				
+				//Week 2 - Removed the .lowercase
 				var dbTitleEnd = db[i].indexOf('|');
 				var dbitem = db[i].substring(0, dbTitleEnd);
 
@@ -139,7 +141,8 @@
 					// return false is needed for most events - this will be reviewed in upcoming course material
 					// THE LINE DIRECTLY BELOW IS CORRECT
 					return false;
-
+					
+//Week 2 - Fixed the End tags to make sure everything had a end tag
 				};
 
 			};
